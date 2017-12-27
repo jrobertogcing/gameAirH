@@ -36,10 +36,7 @@ class GameScene: SKScene {
         
         playerTwoLabel = self.childNode(withName: "playerTwoLabel") as! SKLabelNode
         
-        
-
-
-        disk.physicsBody?.applyImpulse(CGVector(dx: -75, dy: -75))
+        //disk.physicsBody?.applyImpulse(CGVector(dx: -75, dy: -75))
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         
         
@@ -60,6 +57,9 @@ class GameScene: SKScene {
         playerOneLabel.text = "\(score[0])"
         
         playerTwoLabel.text = "\(score[1])"
+        
+        disk.physicsBody?.applyImpulse(CGVector(dx: -75, dy: -75))
+
 
     }
     
@@ -123,7 +123,38 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         
-        playerTwo.run(SKAction.moveTo(x: disk.position.x, duration: 1.0))
+        
+        switch currentGameType {
+        
+        case .easy:
+            
+            playerTwo.run(SKAction.moveTo(x: disk.position.x, duration: 1.3))
+
+            
+            break
+            
+        case .medium:
+            
+            playerTwo.run(SKAction.moveTo(x: disk.position.x, duration: 1.0))
+
+            
+            break
+            
+        case .hard:
+            
+            playerTwo.run(SKAction.moveTo(x: disk.position.x, duration: 0.7))
+
+            
+            break
+            
+        case .playerTwo:
+            // no enemy here
+            
+            break
+        
+        
+        }
+        
         
         if disk.position.y <= playerOne.position.y - 20 {
         

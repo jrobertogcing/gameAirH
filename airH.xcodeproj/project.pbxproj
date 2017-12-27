@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E19882A01FF4433B00734C47 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198829F1FF4433B00734C47 /* MenuViewController.swift */; };
 		E19F67E61FF1E92A00424666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F67E51FF1E92A00424666 /* AppDelegate.swift */; };
 		E19F67E81FF1E92A00424666 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E19F67E71FF1E92A00424666 /* GameScene.sks */; };
 		E19F67EA1FF1E92A00424666 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E19F67E91FF1E92A00424666 /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E198829F1FF4433B00734C47 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E19F67E21FF1E92A00424666 /* airH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19F67E51FF1E92A00424666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19F67E71FF1E92A00424666 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E19F67EB1FF1E92A00424666 /* GameScene.swift */,
 				E19F67ED1FF1E92A00424666 /* GameViewController.swift */,
 				E19F67EF1FF1E92A00424666 /* Main.storyboard */,
+				E198829F1FF4433B00734C47 /* MenuViewController.swift */,
 				E19F67F21FF1E92A00424666 /* Assets.xcassets */,
 				E19F67F41FF1E92A00424666 /* LaunchScreen.storyboard */,
 				E19F67F71FF1E92A00424666 /* Info.plist */,
@@ -276,6 +279,7 @@
 				E19F67EC1FF1E92A00424666 /* GameScene.swift in Sources */,
 				E19F67EE1FF1E92A00424666 /* GameViewController.swift in Sources */,
 				E19F67E61FF1E92A00424666 /* AppDelegate.swift in Sources */,
+				E19882A01FF4433B00734C47 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +530,7 @@
 				E19F68121FF1E92A00424666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E19F68131FF1E92A00424666 /* Build configuration list for PBXNativeTarget "airHTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				E19F68151FF1E92A00424666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E19F68161FF1E92A00424666 /* Build configuration list for PBXNativeTarget "airHUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				E19F68181FF1E92A00424666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
